@@ -1,9 +1,6 @@
-import { connect } from "@/dbConfig/dbConfig";
-import { NextRequest, NextResponse } from "next/server";
+import {NextResponse } from "next/server";
 
-connect();
-
-export async function GET(request: NextRequest) {
+export async function GET() {
     try {
         const response = NextResponse.json({
             message: "Logout Successfully",
